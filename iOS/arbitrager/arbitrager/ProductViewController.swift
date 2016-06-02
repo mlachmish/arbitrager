@@ -13,16 +13,18 @@ import WebKit
 class ProductViewController: NSViewController {
 
     var productUrl : String!
-
-    @IBOutlet var webView: WebView!
+    
+    
+    @IBOutlet weak var productNameLabel: NSTextField!
+    @IBOutlet weak var productDescription: NSScrollView!
+    @IBOutlet weak var originalPriceLabel: NSTextField!
+    @IBOutlet weak var newPriceTextField: NSTextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        let url = NSURL(string:productUrl)
-        let req = NSURLRequest(URL:url!)
-        webView!.mainFrame.loadRequest(req)
     }
     
     override var representedObject: AnyObject? {
@@ -32,5 +34,8 @@ class ProductViewController: NSViewController {
     }
     
     
+    @IBAction func publishNewProduct(sender: AnyObject) {
+        print("Publishing new product")
+    }
 }
 
