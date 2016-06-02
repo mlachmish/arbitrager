@@ -12,6 +12,7 @@ import Foundation
 class MainViewController: NSViewController {
 
     @IBOutlet weak var urlTextField: NSTextField!
+    @IBOutlet weak var goButton: NSButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,5 +33,6 @@ class MainViewController: NSViewController {
             print("Showing product page \(productVC.productUrl)")
         }
     }
+
 }
 

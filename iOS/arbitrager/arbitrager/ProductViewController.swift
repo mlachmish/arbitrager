@@ -25,6 +25,9 @@ class ProductViewController: NSViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        let textView = productDescription.documentView as! NSTextView
+        textView.editable = false
+        newPriceTextField.editable = false
     }
     
     override var representedObject: AnyObject? {
@@ -32,8 +35,7 @@ class ProductViewController: NSViewController {
             // Update the view, if already loaded.
         }
     }
-    
-    
+
     @IBAction func publishNewProduct(sender: AnyObject) {
         print("Publishing new product")
     }
