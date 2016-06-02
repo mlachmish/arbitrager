@@ -8,15 +8,21 @@
 
 import Cocoa
 import Foundation
+import WebKit
 
 class ProductViewController: NSViewController {
 
     var productUrl : String!
 
+    @IBOutlet var webView: WebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        let url = NSURL(string:productUrl)
+        let req = NSURLRequest(URL:url!)
+        webView!.mainFrame.loadRequest(req)
     }
     
     override var representedObject: AnyObject? {

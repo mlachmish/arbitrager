@@ -29,7 +29,7 @@ class MainViewController: NSViewController {
         if segue.identifier == "ProductDetailSegue" {
             let productVC = segue.destinationController as! ProductViewController
             productVC.productUrl = urlTextField.stringValue
-            print("Showing product page")
+            print("Showing product page \(productVC.productUrl)")
         }
     }
 }
