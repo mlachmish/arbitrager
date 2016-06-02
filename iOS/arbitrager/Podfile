@@ -1,0 +1,29 @@
+platform :osx, '10.11'
+use_frameworks!
+
+target 'arbitrager' do
+
+  # # Networking
+  # pod 'Alamofire', '~> 3.4'
+  #
+  # # JSON mapping
+  # pod 'AlamofireObjectMapper', '~> 3.0'
+  #
+  # # Layout
+  # pod 'Cartography', '~> 0.6.0'
+  #
+  # # Date manipulations
+  # pod 'Timepiece', "~> 0.4.2"
+  #
+  # # Image cache
+  # pod 'Kingfisher', '~> 2.4.1'                                      # not used yet
+  #
+  # # Image processing
+  # pod 'Toucan', "~> 0.5.0"                                          # not used yet
+  #
+  # # UI
+  pod 'TextAttributes', "~> 0.3.1" # Attributed strings             # not used yet
+  # pod 'NVActivityIndicatorView', "~> 2.7" # Activity indicator      # not used yet
+
+end
+
