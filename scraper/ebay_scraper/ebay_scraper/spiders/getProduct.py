@@ -14,15 +14,29 @@ class GetproductSpider(scrapy.Spider):
 
     def parse(self, response):
         hxs = HtmlXPathSelector(response)
-        titles = hxs.xpath("//span[@id='productTitle']")
-        items = []
-        for titles in titles:
-            item = EbayScraperItem()
-            title = str(titles.select("text()").extract())
-            title = title[1:-1]     # Remove quots
-            title = title.replace("\\n","")
-            # title = title.rstrip()
-            item["title"] = title
+        titles = hxs.xpath("string(//span[@id='productTitle'])").extract()
+        price = hxs.xpath("string(//span[@id='priceblock_dealprice'])").extract()
+        stock = hxs.xpath("//div[@id='availability']/span")
+        description = hxs.xpath("//div[@id='feature-bullets']/ul/li//span")
+        images = hxs.xpath("//img[contains(@class, 'a-dynamic-image') and contains(@class, 'a-stretch-vertical')][@src][1]")
 
-            items.append(item)
+        #print "########################################################################################################################"
+        #print images.extract()
+
+        items = []
+        item = EbayScraperItem()
+#        title = titles.select("text()").extract()
+#        price = price.select("text()").extract()
+        stock = stock.select("text()").extract()
+        #title = title[1:-1]     # Remove quots
+        item["title"] = str(titles).strip()
+        item["price"] = price
+        item["stock"] = stock
+        formated_desc = ""
+        for desc in description:
+            formated_desc += str(desc.select("text()").extract())
+
+        item["description"] = formated_desc
+        item["images"] = images.select("@src").extract()
+        items.append(item)
         return items

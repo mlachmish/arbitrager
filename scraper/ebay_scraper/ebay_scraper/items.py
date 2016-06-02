@@ -10,6 +10,9 @@ from scrapy.item import Item, Field
 
 class EbayScraperItem(Item):
     title = Field()
-    # price = Field()
+    price = Field()
+    stock = Field()
+    description = Field()
+    images = Field()
     # imageUrl = Field()
     # description = Field()
