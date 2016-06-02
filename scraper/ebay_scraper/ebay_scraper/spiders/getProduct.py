@@ -18,8 +18,10 @@ class GetproductSpider(scrapy.Spider):
         items = []
         for titles in titles:
             item = EbayScraperItem()
-            title = titles.select("text()").extract()
+            title = str(titles.select("text()").extract())
             title = title[1:-1]     # Remove quots
+            title = title.replace("\\n","")
+            # title = title.rstrip()
             item["title"] = title
 
             items.append(item)
