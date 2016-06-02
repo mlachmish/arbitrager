@@ -666,10 +666,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="arbitrager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="MainViewController" customModule="arbitrager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -680,14 +680,6 @@
                                     <font key="font" metaFont="system" size="22"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tpl-z3-1CM">
-                                <rect key="frame" x="20" y="143" width="440" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Enter Amazon URL" drawsBackground="YES" id="LBV-Ns-wWb">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="u8X-LA-Rh5">
@@ -704,7 +696,18 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <segue destination="9Wb-ks-Vvz" kind="modal" identifier="ProductDetailSegue" id="1Ds-6B-QAI"/>
+                                </connections>
                             </button>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tpl-z3-1CM">
+                                <rect key="frame" x="20" y="143" width="440" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Enter Amazon URL" drawsBackground="YES" id="LBV-Ns-wWb">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="QCY-hX-XNA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="6yX-pK-OMM"/>
@@ -720,10 +723,26 @@
                             <constraint firstItem="Vof-Ri-j7b" firstAttribute="top" secondItem="tpl-z3-1CM" secondAttribute="bottom" constant="15" id="xJX-zt-toM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="urlTextField" destination="tpl-z3-1CM" id="w9x-Yd-ocM"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="655"/>
+        </scene>
+        <!--Product View Controller-->
+        <scene sceneID="qmz-ul-4fh">
+            <objects>
+                <viewController id="9Wb-ks-Vvz" customClass="ProductViewController" customModule="arbitrager" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="wC8-wF-2IW">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="zce-Gy-i8o" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="1062"/>
         </scene>
     </scenes>
 </document>

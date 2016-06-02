@@ -2,11 +2,12 @@
 <module type="CIDR_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/arbitrager/Base.lproj/Main.storyboard" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/arbitrager/Assets.xcassets" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/arbitrager/ViewController.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/arbitrager/AppDelegate.swift" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/arbitrager/Info.plist" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/arbitrager/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/arbitrager/MainViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/arbitrager/ProductViewController.swift" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/arbitrager/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Podfile" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.release.xcconfig" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.debug.xcconfig" isTestSource="false" />
