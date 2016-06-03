@@ -61,5 +61,19 @@ public class ServiceClient: NSObject {
             }
         }
     }
+    
+    func publish(product : Product,
+                    success: () -> Void,
+                    failure: (error: ErrorType) -> Void) {
+        
+        Alamofire.request(.POST, ServiceClientConstants.BASE_URL_PATH+"/publish", parameters: ["name":product.name!, "price":product.newPrice!, "description":product.dsc!, "imageURL":product.imageURL!], encoding: .JSON).validate().responseObject { (response: Response<Product, NSError>) in
+            switch response.result {
+            case .Success:
+                success()
+            case .Failure(let error):
+                failure(error: error)
+            }
+        }
+    }
 
 }

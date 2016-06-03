@@ -2,185 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91108bc7-7ee0-479c-b812-107a5f539ced" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Alamofire.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Download.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Error.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Manager.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/MultipartFormData.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/NetworkReachabilityManager.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Notifications.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/ParameterEncoding.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Request.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Response.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/ResponseSerialization.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Result.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/ServerTrustPolicy.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Stream.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Timeline.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Upload.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Validation.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/AlamofireObjectMapper/AlamofireObjectMapper/AlamofireObjectMapper.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/AlamofireObjectMapper/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/AlamofireObjectMapper/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Align.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Coefficients.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Compound.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Constrain.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Constraint.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/ConstraintGroup.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Context.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Dimension.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Distribute.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Edge.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Edges.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Expression.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Extensions.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/LayoutProxy.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Point.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Priority.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Property.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Size.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/View.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/ViewUtils.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Headers/Private/Kingfisher/Kingfisher.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/Image.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImageCache.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImageDownloader.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImagePrefetcher.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImageTransition.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImageView+Kingfisher.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/Kingfisher.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/KingfisherManager.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/KingfisherOptionsInfo.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/Resource.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/String+MD5.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ThreadHelper.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorShape.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorViewable.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/FromJSON.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/Map.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/Mappable.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/Mapper.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/Operators.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/ToJSON.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/CustomDateFormatTransform.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/DateFormatterTransform.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/DateTransform.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/EnumTransform.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/ISO8601DateTransform.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/NSDecimalNumberTransform.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/TransformOf.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/TransformType.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/URLTransform.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Alamofire.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/AlamofireObjectMapper.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Kingfisher.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/ObjectMapper.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire-dummy.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire.modulemap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-dummy.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-prefix.pch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-umbrella.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.modulemap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.xcconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher-dummy.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher-prefix.pch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher.modulemap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher.xcconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper-dummy.m" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper-prefix.pch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper-umbrella.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper.modulemap" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper.xcconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/Duration.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/Int+Timepiece.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSCalendar+Timepiece.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSCalendarUnit+Timepiece.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSDate+Timepiece.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSDateComponents+Timepiece.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSTimeInterval+Timepiece.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/String+Timepiece.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Toucan/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Toucan/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Toucan/Source/Toucan.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcworkspace/xcuserdata/matan.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Product.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/ServiceClient.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jsoup_jsoup_1_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/application/model/EbayClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcworkspace/xcuserdata/matan.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcworkspace/xcuserdata/matan.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/.idea/arbitrager.iml" afterPath="$PROJECT_DIR$/../iOS/arbitrager/.idea/arbitrager.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Podfile" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Podfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Podfile.lock" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Podfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Manifest.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Pods-arbitrager.xcscheme" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Pods-arbitrager.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/TextAttributes.xcscheme" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/TextAttributes.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-acknowledgements.markdown" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-acknowledgements.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-acknowledgements.plist" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-acknowledgements.plist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-frameworks.sh" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-frameworks.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.debug.xcconfig" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.debug.xcconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.release.xcconfig" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.release.xcconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Base.lproj/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Info.plist" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Info.plist" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/ProductViewController.swift" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/ProductViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../run.sh" afterPath="$PROJECT_DIR$/../run.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../scraper/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../scraper/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/ServiceClient.swift" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/ServiceClient.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/application/restControllers/Controller.java" afterPath="$PROJECT_DIR$/src/main/java/application/restControllers/Controller.java" />
     </list>
     <ignored path="gift-service-core-java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -288,7 +117,7 @@
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -332,21 +161,21 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/application/restControllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#942#943#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
+                <element signature="e#1086#1087#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Product.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/application/model/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32717678">
-              <caret line="75" column="85" selection-start-line="75" selection-start-column="85" selection-end-line="75" selection-end-column="85" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#552#553#0" expanded="true" />
@@ -369,6 +198,18 @@
                 <element signature="e#1175#1176#0" expanded="true" />
                 <element signature="e#1223#1224#0" expanded="true" />
                 <element signature="e#1263#1264#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EbayClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/application/model/EbayClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.0301887">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -583,7 +424,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1464937131000" />
+        <entry key="$PROJECT_DIR$" value="1464942494000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -826,7 +667,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/application/outbound/email/MailGunClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/outbound/email/EmailService.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/configuration/MongoDBConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/configuration/SwaggerConfiguration.java" />
@@ -874,9 +714,10 @@
         <option value="$PROJECT_DIR$/src/main/java/application/restControllers/RestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/application/restControllers/controller.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/application/restControllers/Controller.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/application/model/Product.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/application/model/EbayClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/application/restControllers/Controller.java" />
       </list>
     </option>
   </component>
@@ -1121,7 +962,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/eBay_APICall_CodeSamples-master/Trading/General/Trading-XML-HTTPPOST-JAVA/samples/AddFixedPriceItemCall" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
@@ -1730,7 +1571,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1464937138075" />
+    <option name="lastUpdateTimestamp" value="1464942494986" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1760,7 +1601,7 @@
       <workItem from="1464375154183" duration="15510000" />
       <workItem from="1464630820819" duration="3096000" />
       <workItem from="1464698011015" duration="12365000" />
-      <workItem from="1464935772414" duration="4688000" />
+      <workItem from="1464935772414" duration="8556000" />
     </task>
     <task id="LOCAL-00001" summary=".idea commit">
       <created>1462916011489</created>
@@ -2000,7 +1841,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188030000" />
+    <option name="totallyTimeSpent" value="191898000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -2013,7 +1854,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="801" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32863188" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2021,7 +1862,7 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15668203" sideWeight="0.5106496" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21297602" sideWeight="0.48935038" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21297602" sideWeight="0.48935038" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1448468" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32718894" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
@@ -2029,12 +1870,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30543634" sideWeight="0.49159664" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440057" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.50840336" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42595205" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40761635" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2042,7 +1884,6 @@
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32722145" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32440057" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -2099,13 +1940,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="87" />
+      <option name="time" value="91" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="userRepository.findByAccessToken(registerUserResponse.getAccessToken())" language="JAVA" custom="" />
-        <watch expression="userRepository.findByAccessToken(userAccessToken)" language="JAVA" custom="" />
-        <watch expression="doc.select(&quot;img#landingImage&quot;).attr(&quot;src&quot;)" language="JAVA" custom="" />
+        <watch expression="XML.replace(&quot;$TOKEN&quot;, USERTOKEN)" language="JAVA" custom="" />
       </configuration>
     </watches-manager>
   </component>
@@ -2120,8 +1959,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2266,14 +2105,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.9.1/d865eed930c98d444a6b090f412ea38637213cb2/jsoup-1.9.1-sources.jar!/org/jsoup/nodes/Element.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2285,22 +2116,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/application/restControllers/Controller.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-          </folding>
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6984479">
+          <caret line="2086" column="37" selection-start-line="2086" selection-start-column="34" selection-end-line="2086" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/application/model/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32717678">
-          <caret line="75" column="85" selection-start-line="75" selection-start-column="85" selection-end-line="75" selection-end-column="85" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#552#553#0" expanded="true" />
@@ -2323,6 +2158,28 @@
             <element signature="e#1175#1176#0" expanded="true" />
             <element signature="e#1223#1224#0" expanded="true" />
             <element signature="e#1263#1264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/restControllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/application/model/EbayClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0301887">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

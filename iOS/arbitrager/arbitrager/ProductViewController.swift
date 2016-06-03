@@ -15,6 +15,7 @@ import Kingfisher
 class ProductViewController: NSViewController {
 
     var productUrl : String!
+    var product : Product!
     
     let service : ServiceClient = ServiceClient()
     
@@ -44,6 +45,8 @@ class ProductViewController: NSViewController {
     
     func scrapeUrl(sender: String) {
         service.getProduct(productUrl, success: { (product) in
+            self.product = product
+            
             //Update UI
             self.productNameLabel.stringValue = product.name!
             self.productDescription.documentView!.textStorage!!.mutableString.setString(product.dsc!)
@@ -75,6 +78,11 @@ class ProductViewController: NSViewController {
 
     @IBAction func publishNewProduct(sender: AnyObject) {
         print("Publishing new product")
+        self.service.publish(self.product, success: {
+            print("Publishing successfull")
+            }) { (error) in
+                print("Failed to publish")
+        }
     }
 }
 

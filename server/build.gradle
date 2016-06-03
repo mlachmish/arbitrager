@@ -33,6 +33,8 @@ dependencies {
     //Jersey
     compile("com.sun.jersey:jersey-client:1.19.1")
     compile("org.jsoup:jsoup:1.9.1")
+
+    compile("ebay")
 }
 
 task wrapper(type: Wrapper) {
