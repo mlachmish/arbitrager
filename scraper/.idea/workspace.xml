@@ -2,16 +2,209 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc85b5d3-c3cb-43c9-b59d-3f05849bee05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcodeproj/project.xcworkspace/xcuserdata/matan.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcodeproj/project.pbxproj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcodeproj/project.xcworkspace/contents.xcworkspacedata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/arbitrager.xcscheme" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/xcschememanagement.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/AppDelegate.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Assets.xcassets/AppIcon.appiconset/Contents.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Base.lproj/Main.storyboard" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Info.plist" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/ViewController.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Alamofire.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Download.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Error.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Manager.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/MultipartFormData.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/NetworkReachabilityManager.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Notifications.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/ParameterEncoding.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Request.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Response.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/ResponseSerialization.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Result.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/ServerTrustPolicy.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Stream.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Timeline.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Upload.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Alamofire/Source/Validation.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/AlamofireObjectMapper/AlamofireObjectMapper/AlamofireObjectMapper.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/AlamofireObjectMapper/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/AlamofireObjectMapper/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Align.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Coefficients.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Compound.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Constrain.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Constraint.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/ConstraintGroup.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Context.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Dimension.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Distribute.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Edge.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Edges.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Expression.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Extensions.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/LayoutProxy.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Point.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Priority.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Property.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/Size.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/View.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/Cartography/ViewUtils.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Cartography/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Headers/Private/Kingfisher/Kingfisher.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/AnimatedImageView.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/Image.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImageCache.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImageDownloader.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImagePrefetcher.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImageTransition.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ImageView+Kingfisher.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/Kingfisher.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/KingfisherManager.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/KingfisherOptionsInfo.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/Resource.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/String+MD5.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/ThreadHelper.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Kingfisher/Sources/UIButton+Kingfisher.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallBeat.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotate.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotateMultiple.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallClipRotatePulse.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridBeat.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallGridPulse.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulse.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseRise.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallPulseSync.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotate.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallRotateChase.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScale.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleMultiple.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRipple.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallScaleRippleMultiple.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallSpinFadeLoader.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallTrianglePath.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZag.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBallZigZagDeflect.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationBlank.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationCubeTransition.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScale.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScaleParty.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOut.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineScalePulseOutRapid.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationLineSpinFadeLoader.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationPacman.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSemiCircleSpin.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationSquareSpin.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/Animations/NVActivityIndicatorAnimationTriangleSkewSpin.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorAnimationDelegate.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorShape.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorView.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/NVActivityIndicatorView/NVActivityIndicatorViewable.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/NVActivityIndicatorView/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/FromJSON.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/Map.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/Mappable.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/Mapper.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/Operators.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Core/ToJSON.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/CustomDateFormatTransform.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/DateFormatterTransform.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/DateTransform.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/EnumTransform.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/ISO8601DateTransform.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/NSDecimalNumberTransform.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/TransformOf.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/TransformType.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/ObjectMapper/Transforms/URLTransform.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/ObjectMapper/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Alamofire.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/AlamofireObjectMapper.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Cartography.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Kingfisher.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/NVActivityIndicatorView.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/ObjectMapper.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Timepiece.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Toucan.xcscheme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Alamofire.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Alamofire/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/AlamofireObjectMapper.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/AlamofireObjectMapper/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Cartography/Cartography-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Cartography/Cartography-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Cartography/Cartography-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Cartography/Cartography.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Cartography/Cartography.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Cartography/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Kingfisher/Kingfisher.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/NVActivityIndicatorView/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/NVActivityIndicatorView/NVActivityIndicatorView.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/ObjectMapper/ObjectMapper.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Timepiece/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Timepiece/Timepiece-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Timepiece/Timepiece-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Timepiece/Timepiece-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Timepiece/Timepiece.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Timepiece/Timepiece.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Toucan/Info.plist" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Toucan/Toucan-dummy.m" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Toucan/Toucan-prefix.pch" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Toucan/Toucan-umbrella.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Toucan/Toucan.modulemap" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Toucan/Toucan.xcconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/Duration.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/Int+Timepiece.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSCalendar+Timepiece.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSCalendarUnit+Timepiece.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSDate+Timepiece.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSDateComponents+Timepiece.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/NSTimeInterval+Timepiece.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Timepiece/Sources/String+Timepiece.swift" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Toucan/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Toucan/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Toucan/Source/Toucan.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcworkspace/xcuserdata/matan.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager.xcworkspace/xcuserdata/matan.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/.idea/arbitrager.iml" afterPath="$PROJECT_DIR$/../iOS/arbitrager/.idea/arbitrager.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Podfile" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Podfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Podfile.lock" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Podfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Manifest.lock" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Manifest.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Pods-arbitrager.xcscheme" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/Pods-arbitrager.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/TextAttributes.xcscheme" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/TextAttributes.xcscheme" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Pods.xcodeproj/xcuserdata/matan.xcuserdatad/xcschemes/xcschememanagement.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-acknowledgements.markdown" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-acknowledgements.markdown" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-acknowledgements.plist" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-acknowledgements.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-frameworks.sh" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager-frameworks.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.debug.xcconfig" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.debug.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.release.xcconfig" afterPath="$PROJECT_DIR$/../iOS/arbitrager/Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.release.xcconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Info.plist" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/ProductViewController.swift" afterPath="$PROJECT_DIR$/../iOS/arbitrager/arbitrager/ProductViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../run.sh" afterPath="$PROJECT_DIR$/../run.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebay_scraper/ebay_scraper/spiders/getProduct.py" afterPath="$PROJECT_DIR$/ebay_scraper/ebay_scraper/spiders/getProduct.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ebay_scraper/scrapy.cfg" afterPath="$PROJECT_DIR$/ebay_scraper/scrapy.cfg" />
     </list>
     <ignored path="scraper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,11 +228,31 @@
       <file leaf-file-name="getProduct.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ebay_scraper/ebay_scraper/spiders/getProduct.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="26" column="70" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="70" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ebay_scraper/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scrapy.cfg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ebay_scraper/scrapy.cfg">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,8 +281,10 @@
         <entry file="file://$PROJECT_DIR$/ebay_scraper/ebay_scraper/items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <marker date="1464910425000" expanded="true" signature="243:378" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,6 +306,8 @@
       <list>
         <option value="$PROJECT_DIR$/ebay_scraper/ebay_scraper/items.py" />
         <option value="$PROJECT_DIR$/ebay_scraper/ebay_scraper/getProduct.py" />
+        <option value="$PROJECT_DIR$/ebay_scraper/__init__.py" />
+        <option value="$PROJECT_DIR$/ebay_scraper/scrapy.cfg" />
         <option value="$PROJECT_DIR$/ebay_scraper/ebay_scraper/spiders/getProduct.py" />
       </list>
     </option>
@@ -98,7 +315,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="815" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -397,7 +614,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="815" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="813" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -405,10 +622,10 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32918397" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918397" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32965517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33009708" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4011065" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -430,13 +647,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/ebay_scraper/ebay_scraper/spiders/getProduct.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
@@ -469,8 +679,10 @@
     <entry file="file://$PROJECT_DIR$/ebay_scraper/ebay_scraper/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1464910425000" expanded="true" signature="243:378" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -498,10 +710,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ebay_scraper/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ebay_scraper/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ebay_scraper/ebay_scraper/spiders/getProduct.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="26" column="70" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="70" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>

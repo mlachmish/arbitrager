@@ -3,11 +3,12 @@ use_frameworks!
 
 target 'arbitrager' do
 
-  # # Networking
-  # pod 'Alamofire', '~> 3.4'
-  #
-  # # JSON mapping
-  # pod 'AlamofireObjectMapper', '~> 3.0'
+  # Networking
+  pod 'Alamofire', '~> 3.4'
+
+  # JSON mapping
+  pod 'AlamofireObjectMapper', '~> 3.0'
+
   #
   # # Layout
   # pod 'Cartography', '~> 0.6.0'
@@ -15,9 +16,9 @@ target 'arbitrager' do
   # # Date manipulations
   # pod 'Timepiece', "~> 0.4.2"
   #
-  # # Image cache
-  # pod 'Kingfisher', '~> 2.4.1'                                      # not used yet
-  #
+  # Image cache
+  pod 'Kingfisher', '~> 2.4.1'                                      # not used yet
+  
   # # Image processing
   # pod 'Toucan', "~> 0.5.0"                                          # not used yet
   #

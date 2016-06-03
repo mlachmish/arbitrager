@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21B0F716455D4113C1DE7CA6 /* Pods_arbitrager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41634591B0A4E86B9C621425 /* Pods_arbitrager.framework */; };
+		62DD97C21C5A072DF567B0FA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DD9B44DC2E9563318AE6B7 /* Product.swift */; };
+		62DD99DCFABA86237E9D93F7 /* ServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DD909C9D6EF5AB0F7760D1 /* ServiceClient.swift */; };
 		900C2BF31D00D84E008D27AA /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900C2BF21D00D84E008D27AA /* ProductViewController.swift */; };
 		9024C6D01D00B5F100719C34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9024C6CF1D00B5F100719C34 /* AppDelegate.swift */; };
 		9024C6D21D00B5F100719C34 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9024C6D11D00B5F100719C34 /* MainViewController.swift */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		3E934A479B1F2A165723E0BB /* Pods-arbitrager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arbitrager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-arbitrager/Pods-arbitrager.debug.xcconfig"; sourceTree = "<group>"; };
 		41634591B0A4E86B9C621425 /* Pods_arbitrager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_arbitrager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62DD909C9D6EF5AB0F7760D1 /* ServiceClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceClient.swift; sourceTree = "<group>"; };
+		62DD9B44DC2E9563318AE6B7 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		900C2BF21D00D84E008D27AA /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		9024C6CC1D00B5F100719C34 /* arbitrager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arbitrager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9024C6CF1D00B5F100719C34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				9024C6D51D00B5F100719C34 /* Main.storyboard */,
 				9024C6D81D00B5F100719C34 /* Info.plist */,
 				900C2BF21D00D84E008D27AA /* ProductViewController.swift */,
+				62DD9B44DC2E9563318AE6B7 /* Product.swift */,
+				62DD909C9D6EF5AB0F7760D1 /* ServiceClient.swift */,
 			);
 			path = arbitrager;
 			sourceTree = "<group>";
@@ -212,6 +218,8 @@
 				900C2BF31D00D84E008D27AA /* ProductViewController.swift in Sources */,
 				9024C6D21D00B5F100719C34 /* MainViewController.swift in Sources */,
 				9024C6D01D00B5F100719C34 /* AppDelegate.swift in Sources */,
+				62DD97C21C5A072DF567B0FA /* Product.swift in Sources */,
+				62DD99DCFABA86237E9D93F7 /* ServiceClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

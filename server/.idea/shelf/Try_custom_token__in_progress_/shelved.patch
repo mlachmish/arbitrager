@@ -1,0 +1,486 @@
+Index: src/main/java/application/configuration/security/EhcacheSecurityContextRepository.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/configuration/security/EhcacheSecurityContextRepository.java	(revision )
++++ src/main/java/application/configuration/security/EhcacheSecurityContextRepository.java	(revision )
+@@ -0,0 +1,70 @@
++package application.configuration.security;
++
++/**
++ * Created by matan on 17/05/2016.
++ */
++
++import net.sf.ehcache.Cache;
++import net.sf.ehcache.CacheManager;
++import net.sf.ehcache.Element;
++import org.springframework.security.core.Authentication;
++import org.springframework.security.core.context.SecurityContext;
++import org.springframework.security.core.context.SecurityContextHolder;
++import org.springframework.security.web.context.HttpRequestResponseHolder;
++import org.springframework.security.web.context.SecurityContextRepository;
++
++import javax.servlet.http.HttpServletRequest;
++import javax.servlet.http.HttpServletResponse;
++
++/**
++ * A {@link SecurityContextRepository} implementation that stores the security context in EHCACHE between requests.
++ */
++class EhcacheSecurityContextRepository implements SecurityContextRepository {
++    @Override
++    public SecurityContext loadContext(HttpRequestResponseHolder requestResponseHolder) {
++        if (this.containsContext(requestResponseHolder.getRequest())) {
++            return (SecurityContext) this.getCache().get(this.getToken(requestResponseHolder.getRequest()));
++        } else {
++            return SecurityContextHolder.createEmptyContext();
++        }
++    }
++
++    @Override
++    public void saveContext(SecurityContext context, HttpServletRequest request, HttpServletResponse response) {
++        Authentication authentication = context.getAuthentication();
++
++        if (authentication != null && authentication instanceof APIAuthenticationToken) {
++            String token = (String) authentication.getDetails();
++
++            if (token != null) {
++                this.getCache().put(new Element(token, context));
++            }
++        }
++    }
++
++    @Override
++    public boolean containsContext(HttpServletRequest request) {
++        return this.getCache().get(this.getToken(request)) != null;
++    }
++
++    /**
++     * Gets a cache for storing {@link SecurityContext}s.
++     *
++     * @return A {@link Cache}.
++     */
++    private Cache getCache() {
++        CacheManager cacheManager = CacheManager.getInstance();
++        return cacheManager.getCache("SSSC");
++    }
++
++    /**
++     * Gets the Spring Security authentication token from an {@link HttpServletRequest}.
++     *
++     * @param request The {@link HttpServletRequest} from which to extract the token.
++     * @return The Spring Security authentication token from the request.
++     */
++    private String getToken(HttpServletRequest request) {
++        String token = request.getHeader("X-API-TOKEN");
++        return token;
++    }
++}
+\ No newline at end of file
+Index: src/main/java/application/configuration/security/UsernamePasswordAuthenticationProvider.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/configuration/security/UsernamePasswordAuthenticationProvider.java	(revision )
++++ src/main/java/application/configuration/security/UsernamePasswordAuthenticationProvider.java	(revision )
+@@ -0,0 +1,58 @@
++package application.configuration.security;
++
++/**
++ * Created by matan on 17/05/2016.
++ */
++
++
++import application.restControllers.UserController;
++import org.springframework.beans.factory.annotation.Autowired;
++import org.springframework.security.authentication.AuthenticationProvider;
++import org.springframework.security.authentication.AuthenticationServiceException;
++import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
++import org.springframework.security.core.Authentication;
++import org.springframework.security.core.context.SecurityContextHolder;
++
++import java.util.logging.Level;
++import java.util.logging.Logger;
++
++/**
++ * An implementation of Spring Security {@link AuthenticationProvider} that uses
++ * a username and a password for user authentication.
++ */
++class UsernamePasswordAuthenticationProvider implements AuthenticationProvider {
++    private static final Logger log = Logger.getLogger( UserController.class.getName() );
++
++    @Autowired
++    UserController userService;
++
++    /**
++     * Processes login information and attempts to authenticate the user.
++     */
++    @Override
++    public Authentication authenticate(Authentication authentication) {
++        UserAuthenticationResponse authenticationResponse = this.userService.authenticate(new UserAuthenticationRequest(authentication.getName(), (String) authentication.getCredentials()));
++
++        log.log(Level.INFO, "## " + authenticationResponse.firstName);
++        log.log(Level.INFO, "## " + authenticationResponse.lastName);
++//        log.log(Level.INFO, "## " + authenticationResponse.role);
++        log.log(Level.INFO, "## " + authenticationResponse.userName);
++
++        if (authenticationResponse.isSuccess()) {
++            SecurityContextHolder.getContext().setAuthentication(new APIAuthenticationToken(authenticationResponse));
++
++            return SecurityContextHolder.getContext().getAuthentication();
++        }
++
++        throw new AuthenticationServiceException(String.format("The username [%s] could not be authenticated.", authentication.getName()))
++    }
++
++    /**
++     * Indicates that authentication using a username and password is
++     * supported.
++     */
++    @Override
++    public boolean supports(Class authentication) {
++        return authentication != null && authentication == UsernamePasswordAuthenticationToken.class;
++    }
++}
+Index: src/main/java/application/configuration/security/UserAuthenticationResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/configuration/security/UserAuthenticationResponse.java	(revision )
++++ src/main/java/application/configuration/security/UserAuthenticationResponse.java	(revision )
+@@ -0,0 +1,13 @@
++package application.configuration.security;
++
++import org.apache.catalina.connector.Response;
++
++/**
++ * Created by matan on 19/05/2016.
++ */
++public class UserAuthenticationResponse extends Response {
++
++    public String firstName;
++    public String lastName;
++    public String userName;
++}
+Index: src/main/java/application/configuration/security/APIAuthenticationEntryPoint.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/configuration/security/APIAuthenticationEntryPoint.java	(revision )
++++ src/main/java/application/configuration/security/APIAuthenticationEntryPoint.java	(revision )
+@@ -0,0 +1,25 @@
++package application.configuration.security;
++
++/**
++ * Created by matan on 17/05/2016.
++ */
++
++import org.springframework.security.core.AuthenticationException;
++import org.springframework.security.web.AuthenticationEntryPoint;
++
++import javax.servlet.http.HttpServletRequest;
++import javax.servlet.http.HttpServletResponse;
++import java.io.IOException;
++
++/**
++ * Denies all unauthenticated API requests.
++ */
++class APIAuthenticationEntryPoint implements AuthenticationEntryPoint {
++    /**
++     * {@inheritDoc}
++     */
++    @Override
++    public void commence(final HttpServletRequest request, final HttpServletResponse response, final AuthenticationException authException) throws IOException {
++        response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized: Authentication token was either missing or invalid.");
++    }
++}
+Index: src/main/java/application/configuration/security/APIAuthenticationToken.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/configuration/security/APIAuthenticationToken.java	(revision )
++++ src/main/java/application/configuration/security/APIAuthenticationToken.java	(revision )
+@@ -0,0 +1,77 @@
++package application.configuration.security;
++
++/**
++ * Created by matan on 17/05/2016.
++ */
++
++import org.springframework.security.core.Authentication;
++import org.springframework.security.core.CredentialsContainer;
++import org.springframework.security.core.GrantedAuthority;
++
++import java.util.HashSet;
++import java.util.Set;
++
++/**
++ * A Spring Security {@link Authentication} implementation that stores
++ * authentication and authorization information for a person.
++ */
++class APIAuthenticationToken implements Authentication, CredentialsContainer {
++private[this] val authorities: Set[GrantedAuthority] = new HashSet[GrantedAuthority](1)
++        authorities.add(new SimpleGrantedAuthority(user.role.name))
++private[this] val name = user.name
++private val principal = user.username
++private[this] val role = user.role
++private[this] val token = TokenGenerator.generateToken
++
++            public APIAuthenticationToken(UserAuthenticationResponse user) {
++                this.name = user.name;
++
++            }
++
++        /**
++         * @see org.springframework.security.core.CredentialsContainer#eraseCredentials()
++         */
++    @Override
++    public void eraseCredentials() {}
++
++        /**
++         * @see org.springframework.security.core.Authentication#getAuthorities()
++         */
++    @Override
++    public void getAuthorities(){
++        Collection[GrantedAuthority] = this.authorities;
++    }
++
++        /**
++         * @see org.springframework.security.core.Authentication#getCredentials()
++         */
++        @Override
++        public String getCredentials() {
++            return this.role.name();
++        }
++
++        /**
++         * @see org.springframework.security.core.Authentication#getDetails()
++         */
++        override def getDetails = this.token
++
++        /**
++         * @see java.security.Principal#getName()
++         */
++        override def getName = this.name
++
++        /**
++         * @see org.springframework.security.core.Authentication#getPrincipal()
++         */
++        override def getPrincipal = this.principal
++
++        /**
++         * @see org.springframework.security.core.Authentication#isAuthenticated()
++         */
++        override def isAuthenticated = true
++
++        /**
++         * @see org.springframework.security.core.Authentication#setAuthenticated(boolean)
++         */
++        override def setAuthenticated(isAuthenticated: Boolean) {}
++        }
+Index: gift-service-core.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- gift-service-core.iml	(revision 4b082ff11529cd43893407648747cf8743fff721)
++++ gift-service-core.iml	(revision )
+@@ -95,5 +95,9 @@
+     <orderEntry type="library" name="Gradle: org.springframework.plugin:spring-plugin-metadata:1.2.0.RELEASE" level="project" />
+     <orderEntry type="library" name="Gradle: io.springfox:springfox-core:2.4.0" level="project" />
+     <orderEntry type="library" name="Gradle: io.springfox:springfox-swagger-ui:2.4.0" level="project" />
++    <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-config:4.0.4.RELEASE" level="project" />
++    <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-core:4.0.4.RELEASE" level="project" />
++    <orderEntry type="library" name="Gradle: org.springframework.security:spring-security-web:4.0.4.RELEASE" level="project" />
++    <orderEntry type="library" name="Gradle: net.sf.ehcache:ehcache:2.10.2" level="project" />
+   </component>
+ </module>
+\ No newline at end of file
+Index: src/main/resources/springAPISecurityContext.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/springAPISecurityContext.xml	(revision )
++++ src/main/resources/springAPISecurityContext.xml	(revision )
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++       xmlns:security="http://www.springframework.org/schema/security"
++       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
++
++    http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
++  <bean class="org.example.api.security.APIAuthenticationEntryPoint" id="apiAuthenticationEntryPoint" />
++  <bean class="org.example.api.security.EhcacheSecurityContextRepository" id="apiSecurityContextRepository" />
++  <bean class="org.example.api.security.UsernamePasswordAuthenticationProvider" id="authenticationProvider" />
++  <security:authentication-manager alias="authenticationManager" erase-credentials="false">
++    <security:authentication-provider ref="authenticationProvider" />
++  </security:authentication-manager>
++  <security:http auto-config="true" create-session="stateless" entry-point-ref="apiAuthenticationEntryPoint" security-context-repository-ref="apiSecurityContextRepository"
++    use-expressions="true">
++    <security:anonymous enabled="true" granted-authority="ADMIN" />
++  </security:http>
++</beans>
+Index: src/main/java/application/restControllers/UserController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/restControllers/UserController.java	(revision 4b082ff11529cd43893407648747cf8743fff721)
++++ src/main/java/application/restControllers/UserController.java	(revision )
+@@ -1,5 +1,7 @@
+ package application.restControllers;
+ 
++import application.configuration.security.UserAuthenticationRequest;
++import application.configuration.security.UserAuthenticationResponse;
+ import application.model.Event;
+ import application.model.Gift;
+ import application.model.User;
+@@ -65,7 +67,7 @@
+     }
+ 
+     //Utils
+-    private User validateUser(String userId) {
++    private User validateUser(String userId) throws ObjectNotFoundException, InvalidObjectIdException{
+         try {
+             ObjectId id = new ObjectId(userId);
+             return this.userRepository.findById(id).orElseThrow(() -> new ObjectNotFoundException(this.getClass().getName(), userId));
+@@ -73,5 +75,9 @@
+             log.log(Level.WARNING, "Unable to parse ObjectId from: " + userId);
+             throw new InvalidObjectIdException(userId);
+         }
++    }
++
++    public UserAuthenticationResponse authenticate(UserAuthenticationRequest userAuthenticationRequest) {
++        return new UserAuthenticationResponse();
+     }
+ }
+Index: src/main/java/application/Application.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/Application.java	(revision 4b082ff11529cd43893407648747cf8743fff721)
++++ src/main/java/application/Application.java	(revision )
+@@ -4,49 +4,40 @@
+  * Created by matan on 09/05/2016.
+  */
+ 
+-import application.model.*;
+-import application.repositories.event.EventRepository;
+-import application.repositories.gift.GiftRepository;
+-import application.repositories.hall.HallRepository;
+-import application.repositories.user.UserRepository;
+-import org.springframework.boot.CommandLineRunner;
+ import org.springframework.boot.SpringApplication;
+ import org.springframework.boot.autoconfigure.SpringBootApplication;
+-import org.springframework.context.annotation.Bean;
+ 
+-import java.util.Date;
+-
+ @SpringBootApplication
+ public class Application {
+-    @Bean
+-    CommandLineRunner init(UserRepository userRepository, HallRepository hallRepository, EventRepository eventRepository, GiftRepository giftRepository) {
+-        return (evt) -> {
+-            userRepository.deleteAll();
+-            hallRepository.deleteAll();
+-            eventRepository.deleteAll();
+-            giftRepository.deleteAll();
+-
+-            User userMatan = new User("Matan", "Lachmish", "m@gmail.com", "1234");
+-            userRepository.save(userMatan);
+-
+-            Hall havatRonit = new Hall("Havat Ronit", "adress1",null);
+-            hallRepository.save(havatRonit);
+-
+-            Event wedding1 = new Event(new Date(), "Jay", "Clair", havatRonit.getId());
+-            eventRepository.save(wedding1);
+-
+-            wedding1.addUser(userMatan.getId());
+-            eventRepository.save(wedding1);
+-
+-            Payment payment = new Payment(userMatan.getId(), wedding1.getId(), 1000, 2);
+-            Toast toast = new Toast(userMatan.getId(), wedding1.getId());
+-            toast.setText("Good luck!");
+-            Gift gift = new Gift(userMatan.getId(), wedding1.getId());
+-            gift.setPayment(payment);
+-            gift.setToast(toast);
+-            giftRepository.save(gift);
+-        };
+-    }
++//    @Bean
++//    CommandLineRunner init(UserRepository userRepository, HallRepository hallRepository, EventRepository eventRepository, GiftRepository giftRepository) {
++//        return (evt) -> {
++//            userRepository.deleteAll();
++//            hallRepository.deleteAll();
++//            eventRepository.deleteAll();
++//            giftRepository.deleteAll();
++//
++//            User userMatan = new User("Matan", "Lachmish", "m@gmail.com", "1234");
++//            userRepository.save(userMatan);
++//
++//            Hall havatRonit = new Hall("Havat Ronit", "adress1",null);
++//            hallRepository.save(havatRonit);
++//
++//            Event wedding1 = new Event(new Date(), "Jay", "Clair", havatRonit.getId());
++//            eventRepository.save(wedding1);
++//
++//            wedding1.addUser(userMatan.getId());
++//            eventRepository.save(wedding1);
++//
++//            Payment payment = new Payment(userMatan.getId(), wedding1.getId(), 1000, 2);
++//            Toast toast = new Toast(userMatan.getId(), wedding1.getId());
++//            toast.setText("Good luck!");
++//            Gift gift = new Gift(userMatan.getId(), wedding1.getId());
++//            gift.setPayment(payment);
++//            gift.setToast(toast);
++//            giftRepository.save(gift);
++//        };
++//    }
+ 
+     public static void main(String[] args) {
+         SpringApplication.run(Application.class, args);
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision 4b082ff11529cd43893407648747cf8743fff721)
++++ build.gradle	(revision )
+@@ -39,6 +39,10 @@
+     compile("io.springfox:springfox-swagger-ui:2.4.0")
+ 
+ //    compile("org.springframework.security.oauth:spring-security-oauth2:2.0.9.RELEASE")
++    compile("org.springframework.security:spring-security-config:4.0.4.RELEASE")
++    compile("org.springframework.security:spring-security-web:4.0.4.RELEASE")
++    compile("org.springframework.security:spring-security-core:4.0.4.RELEASE")
++    compile("net.sf.ehcache:ehcache:2.10.2")
+ }
+ 
+ task wrapper(type: Wrapper) {
+Index: src/main/java/application/configuration/security/UserAuthenticationRequest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/configuration/security/UserAuthenticationRequest.java	(revision )
++++ src/main/java/application/configuration/security/UserAuthenticationRequest.java	(revision )
+@@ -0,0 +1,13 @@
++package application.configuration.security;
++
++import org.apache.catalina.connector.Request;
++
++/**
++ * Created by matan on 19/05/2016.
++ */
++public class UserAuthenticationRequest extends Request {
++
++    public UserAuthenticationRequest(String userName, String Password){
++        super();
++    }
++}

@@ -84,8 +84,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-arbitrager/Alamofire.framework"
+  install_framework "Pods-arbitrager/AlamofireObjectMapper.framework"
+  install_framework "Pods-arbitrager/Kingfisher.framework"
+  install_framework "Pods-arbitrager/ObjectMapper.framework"
   install_framework "Pods-arbitrager/TextAttributes.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-arbitrager/Alamofire.framework"
+  install_framework "Pods-arbitrager/AlamofireObjectMapper.framework"
+  install_framework "Pods-arbitrager/Kingfisher.framework"
+  install_framework "Pods-arbitrager/ObjectMapper.framework"
   install_framework "Pods-arbitrager/TextAttributes.framework"
 fi

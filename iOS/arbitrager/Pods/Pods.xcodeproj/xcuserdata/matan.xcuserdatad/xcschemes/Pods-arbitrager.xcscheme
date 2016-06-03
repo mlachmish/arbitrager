@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "401D55BB50C0FC6E8D3947B7A2835EF2"
+               BlueprintIdentifier = "D1442317FE7982F67177BAF6F407491C"
                BlueprintName = "Pods-arbitrager"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "Pods_arbitrager.framework">

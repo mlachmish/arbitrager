@@ -1,0 +1,371 @@
+Index: src/main/java/application/model/Hall.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/model/Hall.java	(revision )
++++ src/main/java/application/model/Hall.java	(revision )
+@@ -0,0 +1,102 @@
++package application.model;
++
++import org.springframework.data.mongodb.core.index.Indexed;
++import org.springframework.data.mongodb.core.mapping.DBRef;
++import org.springframework.data.mongodb.core.mapping.Document;
++
++import javax.validation.constraints.NotNull;
++import java.io.Serializable;
++import java.util.List;
++
++/**
++ * Created by matan on 13/05/2016.
++ */
++
++@Document
++public class Hall extends PersistedObject implements Serializable {
++
++    @Indexed
++    @NotNull
++    private String Name;
++
++    @Indexed
++    @NotNull
++    private String Address;
++
++    private String URL;
++
++    @DBRef
++    private List<Event> events;
++
++    public Hall(String name, String address, String URL, List<Event> events) {
++        Name = name;
++        Address = address;
++        this.URL = URL;
++        this.events = events;
++    }
++
++    public String getName() {
++        return Name;
++    }
++
++    public void setName(String name) {
++        Name = name;
++    }
++
++    public String getAddress() {
++        return Address;
++    }
++
++    public void setAddress(String address) {
++        Address = address;
++    }
++
++    public String getURL() {
++        return URL;
++    }
++
++    public void setURL(String URL) {
++        this.URL = URL;
++    }
++
++    public List<Event> getEvents() {
++        return events;
++    }
++
++    public void setEvents(List<Event> events) {
++        this.events = events;
++    }
++
++    @Override
++    public boolean equals(Object o) {
++        if (this == o) return true;
++        if (!(o instanceof Hall)) return false;
++
++        Hall hall = (Hall) o;
++
++        if (!Name.equals(hall.Name)) return false;
++        if (!Address.equals(hall.Address)) return false;
++        if (URL != null ? !URL.equals(hall.URL) : hall.URL != null) return false;
++        return events != null ? events.equals(hall.events) : hall.events == null;
++
++    }
++
++    @Override
++    public int hashCode() {
++        int result = Name.hashCode();
++        result = 31 * result + Address.hashCode();
++        result = 31 * result + (URL != null ? URL.hashCode() : 0);
++        result = 31 * result + (events != null ? events.hashCode() : 0);
++        return result;
++    }
++
++    @Override
++    public String toString() {
++        return "Hall{" +
++                "Name='" + Name + '\'' +
++                ", Address='" + Address + '\'' +
++                ", URL='" + URL + '\'' +
++                ", events=" + events +
++                '}';
++    }
++}
+Index: src/main/java/application/model/User.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/model/User.java	(revision fb1ea001babeabdf5d9fc3cb79c0aa7e1f524493)
++++ src/main/java/application/model/User.java	(revision )
+@@ -5,10 +5,13 @@
+  */
+ 
+ import com.fasterxml.jackson.annotation.JsonIgnore;
++import org.springframework.data.mongodb.core.index.Indexed;
++import org.springframework.data.mongodb.core.mapping.DBRef;
+ import org.springframework.data.mongodb.core.mapping.Document;
+ 
+ import javax.validation.constraints.NotNull;
+ import java.io.Serializable;
++import java.util.List;
+ 
+ @Document
+ public class User extends PersistedObject implements Serializable {
+@@ -19,33 +22,98 @@
+     @NotNull
+     private String lastName;
+ 
++    @Indexed(unique = true)
+     @NotNull
+     private String email;
+ 
+     @JsonIgnore
+     @NotNull
+-    public String password;
++    private String password;
+ 
++    @DBRef
++    private List<Event> events;
++
++    public User(String firstName, String lastName, String email, String password, List<Event> events) {
++        this.firstName = firstName;
++        this.lastName = lastName;
++        this.email = email;
++        this.password = password;
++        this.events = events;
++    }
++
+     public String getFirstName() {
+         return firstName;
+     }
+ 
++    public void setFirstName(String firstName) {
++        this.firstName = firstName;
++    }
++
+     public String getLastName() {
+         return lastName;
+     }
+ 
++    public void setLastName(String lastName) {
++        this.lastName = lastName;
++    }
++
+     public String getEmail() {
+         return email;
+     }
+ 
++    public void setEmail(String email) {
++        this.email = email;
++    }
++
+     public String getPassword() {
+         return password;
+     }
+ 
+-    public User(String firstName, String lastName, String email, String password) {
+-        this.firstName = firstName;
+-        this.lastName = lastName;
+-        this.email = email;
++    public void setPassword(String password) {
+         this.password = password;
++    }
++
++    public List<Event> getEvents() {
++        return events;
++    }
++
++    public void setEvents(List<Event> events) {
++        this.events = events;
++    }
++
++    @Override
++    public boolean equals(Object o) {
++        if (this == o) return true;
++        if (!(o instanceof User)) return false;
++
++        User user = (User) o;
++
++        if (!firstName.equals(user.firstName)) return false;
++        if (!lastName.equals(user.lastName)) return false;
++        if (!email.equals(user.email)) return false;
++        if (!password.equals(user.password)) return false;
++        return events != null ? events.equals(user.events) : user.events == null;
++
++    }
++
++    @Override
++    public int hashCode() {
++        int result = firstName.hashCode();
++        result = 31 * result + lastName.hashCode();
++        result = 31 * result + email.hashCode();
++        result = 31 * result + password.hashCode();
++        result = 31 * result + (events != null ? events.hashCode() : 0);
++        return result;
++    }
++
++    @Override
++    public String toString() {
++        return "User{" +
++                "firstName='" + firstName + '\'' +
++                ", lastName='" + lastName + '\'' +
++                ", email='" + email + '\'' +
++                ", password='" + password + '\'' +
++                ", events=" + events +
++                '}';
+     }
+ }
+Index: src/main/java/application/model/Event.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/model/Event.java	(revision )
++++ src/main/java/application/model/Event.java	(revision )
+@@ -0,0 +1,120 @@
++package application.model;
++
++import org.springframework.data.mongodb.core.index.Indexed;
++import org.springframework.data.mongodb.core.mapping.DBRef;
++import org.springframework.data.mongodb.core.mapping.Document;
++
++import javax.validation.constraints.NotNull;
++import java.io.Serializable;
++import java.util.Date;
++import java.util.List;
++
++/**
++ * Created by matan on 13/05/2016.
++ */
++
++@Document
++public class Event extends PersistedObject implements Serializable{
++
++    @Indexed
++    @NotNull
++    private Date Date;
++
++    @NotNull
++    private String GroomName;
++
++    @NotNull
++    private String BrideName;
++
++    @Indexed
++    @DBRef
++    @NotNull
++    private Hall hall;
++
++    @DBRef
++    private List<User> users;
++
++    public Event(java.util.Date date, String groomName, String brideName, Hall hall, List<User> users) {
++        Date = date;
++        GroomName = groomName;
++        BrideName = brideName;
++        this.hall = hall;
++        this.users = users;
++    }
++
++    public java.util.Date getDate() {
++        return Date;
++    }
++
++    public void setDate(java.util.Date date) {
++        Date = date;
++    }
++
++    public String getGroomName() {
++        return GroomName;
++    }
++
++    public void setGroomName(String groomName) {
++        GroomName = groomName;
++    }
++
++    public String getBrideName() {
++        return BrideName;
++    }
++
++    public void setBrideName(String brideName) {
++        BrideName = brideName;
++    }
++
++    public Hall getHall() {
++        return hall;
++    }
++
++    public void setHall(Hall hall) {
++        this.hall = hall;
++    }
++
++    public List<User> getUsers() {
++        return users;
++    }
++
++    public void setUsers(List<User> users) {
++        this.users = users;
++    }
++
++    @Override
++    public boolean equals(Object o) {
++        if (this == o) return true;
++        if (!(o instanceof Event)) return false;
++
++        Event event = (Event) o;
++
++        if (!Date.equals(event.Date)) return false;
++        if (!GroomName.equals(event.GroomName)) return false;
++        if (!BrideName.equals(event.BrideName)) return false;
++        if (!hall.equals(event.hall)) return false;
++        return users != null ? users.equals(event.users) : event.users == null;
++
++    }
++
++    @Override
++    public int hashCode() {
++        int result = Date.hashCode();
++        result = 31 * result + GroomName.hashCode();
++        result = 31 * result + BrideName.hashCode();
++        result = 31 * result + hall.hashCode();
++        result = 31 * result + (users != null ? users.hashCode() : 0);
++        return result;
++    }
++
++    @Override
++    public String toString() {
++        return "Event{" +
++                "Date=" + Date +
++                ", GroomName='" + GroomName + '\'' +
++                ", BrideName='" + BrideName + '\'' +
++                ", hall=" + hall +
++                ", users=" + users +
++                '}';
++    }
++}
+Index: src/main/java/application/Application.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/Application.java	(revision fb1ea001babeabdf5d9fc3cb79c0aa7e1f524493)
++++ src/main/java/application/Application.java	(revision )
+@@ -1,0 +1,0 @@

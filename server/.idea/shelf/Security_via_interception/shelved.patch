@@ -1,0 +1,77 @@
+Index: src/main/java/application/configuration/security/AuthenticationHandler.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/configuration/security/AuthenticationHandler.java	(revision )
++++ src/main/java/application/configuration/security/AuthenticationHandler.java	(revision )
+@@ -0,0 +1,32 @@
++//package application.configuration.security;
++//
++///**
++// * Created by matan on 20/05/2016.
++// */
++//
++//import javax.servlet.http.HttpServletRequest;
++//import javax.servlet.http.HttpServletResponse;
++//
++//import org.springframework.beans.factory.annotation.Autowired;
++//import org.springframework.context.annotation.ComponentScan;
++//import org.springframework.context.annotation.Configuration;
++//import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
++//
++//@Configuration
++//public class AuthenticationHandler extends HandlerInterceptorAdapter {
++//
++//    @Autowired
++//    private Authenticator authenticator;
++//
++//    @Override
++//    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
++//            throws Exception {
++//        String authorizationHeader = request.getHeader("Authorization");
++//        System.out.println("Got request to save data : name:"+ authorizationHeader);
++//
++//        if (!authenticator.verifyAuthentication(authorizationHeader)) {
++//            throw new UnauthorizedUserException();
++//        }
++//        return true;
++//    }
++//}
+\ No newline at end of file
+Index: src/main/java/application/configuration/security/AuthenticationInterceptor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/java/application/configuration/security/AuthenticationInterceptor.java	(revision )
++++ src/main/java/application/configuration/security/AuthenticationInterceptor.java	(revision )
+@@ -0,0 +1,28 @@
++//package application.configuration.security;
++//
++//import org.springframework.context.annotation.Bean;
++//import org.springframework.context.annotation.ComponentScan;
++//import org.springframework.context.annotation.Configuration;
++//import org.springframework.web.servlet.config.annotation.EnableWebMvc;
++//import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
++//import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
++//
++///**
++// * Created by matan on 20/05/2016.
++// */
++//
++//@Configuration
++//@ComponentScan("application.configuration.security")
++//@EnableWebMvc
++//public class AuthenticationInterceptor extends WebMvcConfigurerAdapter {
++//
++//    @Bean
++//    public AuthenticationHandler AuthenticationHandler() {
++//        return new AuthenticationHandler();
++//    }
++//
++//    public @Override void addInterceptors(InterceptorRegistry registry) {
++//        registry.addInterceptor(AuthenticationHandler());
++//    }
++//
++//}

@@ -750,25 +750,17 @@
                                     <action selector="publishNewProduct:" target="9Wb-ks-Vvz" id="9bm-70-K8g"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kzh-xp-Rt4">
-                                <rect key="frame" x="165" y="531" width="121" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Product Name" id="d0A-sX-1Df">
-                                    <font key="font" metaFont="system" size="18"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aRO-gl-BIu">
-                                <rect key="frame" x="28" y="92" width="86" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Original Price" id="N4D-AC-xu8">
+                                <rect key="frame" x="28" y="92" width="126" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Original Price (USD)" id="N4D-AC-xu8">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WM9-Cs-Z6S">
-                                <rect key="frame" x="356" y="92" width="66" height="17"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="New Price" id="wqF-H0-YuH">
+                                <rect key="frame" x="316" y="92" width="106" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="New Price (USD)" id="wqF-H0-YuH">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -783,7 +775,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GuV-XJ-8v6">
-                                <rect key="frame" x="338" y="58" width="81" height="22"/>
+                                <rect key="frame" x="298" y="58" width="121" height="22"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="New Price" drawsBackground="YES" id="cw4-6L-P02">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -826,6 +818,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kzh-xp-Rt4">
+                                <rect key="frame" x="165" y="531" width="121" height="22"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Product Name" id="d0A-sX-1Df">
+                                    <font key="font" metaFont="system" size="18"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="GuV-XJ-8v6" firstAttribute="leading" secondItem="WM9-Cs-Z6S" secondAttribute="leading" constant="-20" id="HKU-aI-Ec2"/>
@@ -852,6 +852,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="o0u-Ci-Y8p" id="kBh-7P-bgd"/>
                         <outlet property="newPriceTextField" destination="GuV-XJ-8v6" id="3AQ-TK-FuD"/>
                         <outlet property="originalPriceLabel" destination="QjL-Zl-3lN" id="y4p-XB-Vqu"/>
                         <outlet property="productDescription" destination="YPr-YK-hnU" id="Y5A-r7-bzc"/>
