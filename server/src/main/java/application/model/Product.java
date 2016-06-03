@@ -73,7 +73,12 @@ public class Product implements Serializable {
         try {
             Document doc = Jsoup.connect(urlString).get();
             String name = doc.select("span#productTitle").text();
-            String price = doc.select("span#priceblock_ourprice").text().substring(1);
+            String price = doc.select("span#priceblock_saleprice").text();
+            if (price.isEmpty()) {
+                price = doc.select("span#priceblock_ourprice").text();
+            }
+            price = price.substring(1);
+
             Boolean inStock = Objects.equals(doc.select("div#availability span").text(), "In Stock.");
             String description = doc.select("div#feature-bullets").text();
             String imageUrl = doc.select("img#landingImage").attr("src");
